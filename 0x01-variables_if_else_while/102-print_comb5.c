@@ -10,56 +10,16 @@
  */
 int main(void)
 {
-	int i, j, k, l;
-
-	i = j = k = 48;
-	l = 49;
-	while  ((i < 58))
-	{
-		putchar(i);
-		putchar(j);
-		putchar(32);
-		putchar(k);
-		putchar(l);
-		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
-		{
-			putchar('\n');
-			i++;
-		}
-		else
-		{
-			putchar(44);
-			putchar(32);
-			if ((k == 57) && (l == 57))
-			{
-				if (j < 56)
-				{
-					l = ++j + 1;
-					k = i;
-				}
-				else if (j == 56)
-				{
-					j++;
-					k = i + 1;
-					l = 48;
-				}
-				else if (j == 57)
-				{
-					j = 48;
-					l = 49;
-					k = ++i;
-				}
-			}
-			else if (l < 57)
-			{
-				l++;
-			}
-			else
-			{
-				l = 48;
-				k++;
-			}
-		}
-	}
-	return (0);
+	int Num1, Num2;
+    for (Num1 = 0; Num1 < 9; Num1++)
+    {
+        for (Num2 = Num1 + 1; Num2 < 10; Num2++)
+    }
+ putchar((Num1 % 10) + '0')
+putchar((Num2 % 10) + '0')
+			putchar (Num1==8 && Num2==9)
+            continue;
+            putchar(',');
+            putchar('');
 }
+	return (0);
