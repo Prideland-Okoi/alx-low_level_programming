@@ -18,3 +18,4 @@ All of the following files are programs written in C:
 | `3-op_functions.c` | File that contains functions that calculates arithmetic operations |
 | `3-get_op_func.c` | Function pointer that returns the pointer of the arithmetic functions |
 | `3-main.c` | Entry point |
+| `100-main_opcodes.c` | Prints the opcodes of its own main function |
