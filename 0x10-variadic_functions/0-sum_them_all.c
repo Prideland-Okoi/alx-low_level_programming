@@ -6,6 +6,12 @@
  *
  * Return: sum of its parameters.
  */
+typedef struct printer
+{
+	char *symbol;
+	void (*print)(list arg);
+}print_list;
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list list;
