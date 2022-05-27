@@ -9,14 +9,14 @@
 void free_listp(listp_t **head)
 {
 	listp_t *temp;
-	listp_t *curr;
+	listp_t *current;
 
 	if (head != NULL)
 	{
-		curr = *head;
-		while ((temp = curr) != NULL)
+		current = *head;
+		while ((temp = current) != NULL)
 		{
-			curr = curr->next;
+			current = current->next;
 			free(temp);
 		}
 		*head = NULL;
@@ -29,7 +29,7 @@ void free_listp(listp_t **head)
  *
  * Return: number of nodes in the list.
  */
-size_t print_listint_safe(const listint_t *head)
+size_t print_listint_safe(listint_t **h)
 {
 	size_t nnodes = 0;
 	listp_t *hptr, *new, *add;
@@ -55,15 +55,15 @@ size_t print_listint_safe(const listint_t *head)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_listp(&hptr);
-				return (nnodes);
+				return (num_nodes);
 			}
 		}
 
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
-		nnodes++;
+		num_nodes++;
 	}
 
 	free_listp(&hptr);
-	return (nnodes);
+	return (num_nodes);
 }
