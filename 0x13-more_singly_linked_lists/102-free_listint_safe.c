@@ -6,7 +6,7 @@
  *
  * Return: no return.
  */
-void free_listp2(listp_t **head)
+void free_listint2(listint_t **head)
 {
 	listp_t *temp;
 	listp_t *current;
