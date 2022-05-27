@@ -9,14 +9,14 @@
 void free_listp2(listp_t **head)
 {
 	listp_t *temp;
-	listp_t *curr;
+	listp_t *current;
 
 	if (head != NULL)
 	{
-		curr = *head;
-		while ((temp = curr) != NULL)
+		current = *head;
+		while ((temp = current) != NULL)
 		{
-			curr = curr->next;
+			current = current->next;
 			free(temp);
 		}
 		*head = NULL;
