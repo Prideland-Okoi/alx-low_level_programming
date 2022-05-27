@@ -11,7 +11,7 @@ int pop_listint(listint_t **head)
 {
 	int head_node;
 	listint_t *h;
-	listint_t *curr;
+	listint_t *current;
 
 	if (*head == NULL)
 		return (0);
@@ -22,7 +22,7 @@ int pop_listint(listint_t **head)
 
 	h = current->next;
 
-	free(curr);
+	free(current);
 
 	*head = h;
 
