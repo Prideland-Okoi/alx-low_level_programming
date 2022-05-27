@@ -42,7 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 		if (new == NULL)
 			exit(98);
 
-		new->p = (void *)head;
+		new->ptr = (void *)head;
 		new->next = hptr;
 		hptr = new;
 
