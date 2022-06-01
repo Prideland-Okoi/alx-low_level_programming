@@ -14,6 +14,7 @@ void print_data(char *ptr);
 void print_magic(char *ptr);
 void check_sys(char *ptr);
 int check_elf(char *ptr);
+void print_abi(unsigned char *ptr);
 int main(int argc, char *argv[]);
 
 /**
@@ -208,9 +209,18 @@ int check_elf(char *ptr)
 
 	return (0);
 }
+/**
+ * print_abi - Prints the ABI version of an ELF header.
+ * @ptr: A pointer to an array containing the ELF ABI version.
+ */
+void print_abi(unsigned char *ptr)
+{
+	printf("  ABI Version:                       %d\n",
+	       ptr[EI_ABIVERSION]);
+}
 
 /**
- * main - check the code for main School students.
+ * main - check the code for me.
  * @argc: number of arguments.
  * @argv: arguments vector.
  * Return: Always 0.
