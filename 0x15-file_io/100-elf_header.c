@@ -190,6 +190,7 @@ void check_sys(char *ptr)
 	print_osabi(ptr);
 	print_type(ptr);
 	print_addr(ptr);
+	print_abi(ptr);
 }
 
 /**
