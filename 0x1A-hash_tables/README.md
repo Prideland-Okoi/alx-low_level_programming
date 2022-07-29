@@ -2,6 +2,8 @@
 
 Project done during **ALX Software Engineering Scholarship 2022** at **Alx Students Education**. It aims to learn how to implement Hash Tables with **C language**.
 
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/253/php.png" width="400"/>
+
 ## Resources
 Read or watch:
 
